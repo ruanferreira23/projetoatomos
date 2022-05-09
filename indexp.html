@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https: //fonts.googleapis.com/css2? family= Poppins:wght@100 & display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilop.css">
+    <title>.:Ruan Ferreira:.</title>
+</head>
+<body>
+    <header>
+        <div id="logo">
+    <img src="C:\Users\User\documents\ruan\gamaacademy\HTML\minhapagina\imagens\imgrfc2.jpg" alt="Logo Ruan Ferreira" width="15%"/>
+        </div>    
+        <ul>
+            <li>
+                <a target="_blank" href="https://www.linkedin.com/in/ruan-ferreira-16b41b1bb/">Linkedin</a>
+            </li>
+
+            <li>
+                <a target="_blank" href="mailto:ruanferreirame@gmail.com">E-mail</a>
+            </li>
+
+            <li>
+            <a target="_blank" href="https://wa.me/71996792358">Wathsapp</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://github.com/ruanferreira23">GitHub</a>
+                </li>
+        </li>
+        </div>
+</header>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Ruan Ferreira</h1>
+                <h5>Front-End Developer</h5>
+            </div>
+
+            <div onclick="displayabout()" id="arrow">
+                <i id="animation" class="fa-solid fa-angle-down"></i>
+            </div>
+
+            <div style="display: none" id="about">
+                <p>
+                    Formado em Pedagogia com técnico em Informática e eletromecânica.
+                    Cursando o primeiro semestre em Análises de Sistemas na UNINASSAU.
+                    Com experiência em Tecnologias Educacionais e Inclusão digital.
+                </p>
+            </div>
+            <div class="form">
+                <div>
+                    <p>Deixe seu contato</p><br>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="seu melhor email :)">
+                   <button>Enviar!</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        function displayabout() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate')
+            var arrow = document.getElementById('about');
+            arrow.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
